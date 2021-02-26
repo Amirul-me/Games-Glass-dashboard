@@ -1,0 +1,244 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+h1 {
+  color: rgb(66, 102, 150);
+  font-weight: 600;
+  font-size: 2rem;
+  opacity: 0.8;
+}
+h2,
+p {
+  color: rgb(101, 142, 198);
+  font-weight: 500;
+  opacity: 0.8;
+  font-size: 16px;
+}
+h3 {
+  color: rgb(66, 102, 150);
+  font-weight: 600;
+  opacity: 0.8;
+}
+main {
+  font-family: Poppins, sans-serif;
+  background: linear-gradient(
+    to right top,
+    rgb(101, 223, 201),
+    rgb(108, 219, 235)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.glass {
+  min-height: 80vh;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 2rem;
+  z-index: 2;
+  backdrop-filter: blur(2rem);
+  display: flex;
+}
+.user img {
+  margin-top: 15px;
+  width: 59px;
+  border-radius: 16px;
+}
+.card img {
+  width: 80px;
+}
+.circle1,
+.circle2 {
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.3)
+  );
+  height: 20rem;
+  width: 20rem;
+  position: absolute;
+  border-radius: 50%;
+}
+.circle1 {
+  top: 5%;
+  right: 15%;
+}
+.circle2 {
+  bottom: 5%;
+  left: 10%;
+}
+.dashboard {
+  flex: 1 1 0%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 2rem;
+}
+.link {
+  display: flex;
+  margin: 1rem 1rem;
+  padding: 1rem 3rem;
+  align-items: center;
+  transition: 0.4s linear;
+  cursor: pointer;
+  border-radius: 15px;
+
+  outline: none;
+}
+.link:hover {
+  box-shadow: 10px 5px 10px #d3d0be;
+}
+.link h2 {
+  padding: 0rem 2rem;
+}
+.games {
+  flex: 2 1 0%;
+}
+.pro {
+  background: linear-gradient(
+    to right top,
+    rgb(101, 223, 201),
+    rgb(108, 219, 235)
+  );
+  border-radius: 2rem;
+  color: white;
+  padding: 1rem;
+  position: relative;
+  margin-bottom: 37px;
+}
+.pro img {
+  position: absolute;
+  top: -23%;
+  right: 4%;
+}
+.pro h2 {
+  width: 40%;
+  color: white;
+  font-weight: 600;
+}
+.status {
+  margin-left: 5px;
+}
+.status input {
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  outline: none;
+  border: none;
+  width: 50%;
+  padding: 0.5rem;
+  border-radius: 2rem;
+}
+.games {
+  margin: 0px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.card {
+  display: flex;
+  background: linear-gradient(
+    to left top,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.5)
+  );
+  border-radius: 1rem;
+  margin: 0 0 15px 0;
+  padding: 1rem;
+  box-shadow: rgba(122, 122, 122, 0.21) 6px 6px 20px;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.card:hover {
+  box-shadow: 10px 10px 10px #70a8aa;
+}
+
+.progress {
+  background: linear-gradient(
+    to right top,
+    rgb(101, 223, 201),
+    rgb(108, 219, 235)
+  );
+  width: 100%;
+  height: 15%;
+  border-radius: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+.progress::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgb(236, 236, 236);
+  position: absolute;
+  left: 80%;
+}
+.progress-2 {
+  background: linear-gradient(
+    to right top,
+    rgb(101, 223, 201),
+    rgb(108, 219, 235)
+  );
+  width: 100%;
+  height: 15%;
+  border-radius: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+.progress-2::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgb(236, 236, 236);
+  position: absolute;
+  left: 50%;
+}
+.progress-3 {
+  background: linear-gradient(
+    to right top,
+    rgb(101, 223, 201),
+    rgb(108, 219, 235)
+  );
+  width: 100%;
+  height: 15%;
+  border-radius: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+.progress-3::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgb(236, 236, 236);
+  position: absolute;
+  left: 70%;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card-jamela {
+  margin-left: 18px;
+}
+.percentage {
+  font-weight: bold;
+  -webkit-text-fill-color: transparent;
+}
